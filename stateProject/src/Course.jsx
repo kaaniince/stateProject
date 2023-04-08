@@ -2,7 +2,7 @@ import Cyper from "./images/cyper.jpg";
 import Data from "./images/data-science.jpg";
 import Web from "./images/web.jpg";
 import Game from "./images/game.png";
-
+import "./Course.css";
 const courseMap = {
   Cyper,
   Data,
@@ -12,8 +12,13 @@ const courseMap = {
 
 function Course({ courseName }) {
   return (
-    <div>
-      <img src={courseMap[courseName]} alt={courseName} title={courseName} />
+    <div className="courseDiv ">
+      <img
+        className="course"
+        src={courseMap[courseName]}
+        alt={courseName}
+        title={courseName}
+      />
     </div>
   );
 }

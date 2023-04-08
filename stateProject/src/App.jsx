@@ -19,10 +19,10 @@ function App() {
     return <Course courseName={course} key={index} />;
   });
   return (
-    <div className="App">
-      <div className="flex min-h-screen flex-col items-center justify-top gap-20 bg-black">
+    <div>
+      <div className=" flex min-h-screen flex-col items-center gap-20 bg-black">
         <Button onClick={handleClick} string="Add Course"></Button>
-        <div>{courseList}</div>
+        <div className="courseList">{courseList}</div>
       </div>
     </div>
   );

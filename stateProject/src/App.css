@@ -1,3 +1,8 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+.courseList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
